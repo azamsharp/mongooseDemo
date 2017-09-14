@@ -1,0 +1,17 @@
+
+
+<h1>Add New Post </h1>
+
+<form action="/new-post" method="POST">
+  Enter title: <input name="title" type="text" />
+  Enter description: <input name="description" type="text" />
+  <input type="submit" />
+</form>
+
+{{#posts}}
+
+  <h3>{{title}}</h3>
+  <p>
+  {{description}}
+  </p>
+{{/posts}}
